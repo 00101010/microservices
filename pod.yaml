@@ -1,0 +1,9 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: microservices-pod
+spec:
+  containers:
+    - image: identity-service
+      name: microservices-containers
+      imagePullPolicy: Never          # this seems to be necessary to be able run a local image
